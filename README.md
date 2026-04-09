@@ -51,3 +51,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/dvarru
 Enlaces de interés:
 
 * [Perligata](https://metacpan.org/dist/Lingua-Romana-Perligata/view/lib/Lingua/Romana/Perligata.pm)
+* [Klingon](https://metacpan.org/pod/Lingua::tlhInganHol::yIghun)
