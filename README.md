@@ -1,35 +1,45 @@
 # Dsl::Latin
 
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/dsl/latin`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-## Installation
-
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
-
-Install the gem and add to the application's Gemfile by executing:
-
-```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```
+DSL para programar en Latín usando Ruby.
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+Este es un proyecto que no tiene utilidad práctica. El objetivo era poner a prueba, una vez más, las características del lenguaje Ruby para crear un DSL de Latín en un corto espacio de tiempo.
+
+## Instalación
+
 
 ```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+gem install dsl-latin
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require "dsl/latin"
 
-## Development
+# Ejemplo: si-entonces-sino
+aetas = X
+escribere "\nEdad: #{aetas}"
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+si(aetas.maior? XVII)
+  .tum { escribere "Adulto" }
+  .si_non { escribere "Menor" }
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+# Output:
+#
+# => Edad: 10
+# => Menor
+```
+
+## Features
+
+* Muestra mensajes por pantalla (`escribere`)
+* Tenemos la instrucción condicional (`si-tum-si_non`)
+* Algunos números se pueden escribir como números romanos.
+* Los operadores de `>` y `<`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/dsl-latin.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dvarrui/dsl-latin.
+
