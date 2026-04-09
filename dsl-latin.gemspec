@@ -5,6 +5,7 @@ require_relative "lib/dsl/latin/version"
 Gem::Specification.new do |spec|
   spec.name = "dsl-latin"
   spec.version = Dsl::Latin::VERSION
+  spec.license = "MPL-2.0"
   spec.authors = ["David Vargas"]
   spec.email = ["dvarrui@proton.me"]
 
