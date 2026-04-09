@@ -32,6 +32,8 @@ si(aetas.maior? XVII)
 # => Menor
 ```
 
+> Más [ejemplos](./examples/)
+
 ## Features
 
 * Muestra mensajes por pantalla (`escribere`)
@@ -43,3 +45,9 @@ si(aetas.maior? XVII)
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/dvarrui/dsl-latin.
 
+
+## ANEXO
+
+Enlaces de interés:
+
+* [Perligata](https://metacpan.org/dist/Lingua-Romana-Perligata/view/lib/Lingua/Romana/Perligata.pm)
