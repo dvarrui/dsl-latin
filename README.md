@@ -8,12 +8,12 @@ Este es un proyecto que no tiene utilidad práctica. El objetivo era poner a pru
 
 ## Instalación
 
-
-```bash
-gem install dsl-latin
-```
+* Instalar Ruby.
+* Instalar la gema `gem install dsl-latin`
 
 ## Usage
+
+* Crear un programa con el siguiente contenido:
 
 ```ruby
 require "dsl/latin"
@@ -31,6 +31,8 @@ si(aetas.maior? XVII)
 # => Edad: 10
 # => Menor
 ```
+
+* Ejecutar con `ruby FILENAME`
 
 > Más [ejemplos](./examples/)
 
